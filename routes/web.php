@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/calci', function () {
+    return view('calci');
+});
 Route::get('login', 'AuthenticationController@index')->name('login');
  Route::post('login', 'AuthenticationController@postLogin'); 
 
